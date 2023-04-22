@@ -5,18 +5,16 @@ int main()
 {
     linkedList l;
     node *n=new node();
-    cout<<l.isEmpty()<<endl;
+    cout<<"List Empty:"<<l.isEmpty()<<endl;
     l.addToHead(5);
     l.addToTail(10);
     l.addToHead(15);
     l.traverse();
-    n=l.retrieve(10);
-    cout<<n->info<<endl;
-    l.add(30,n);
-    l.traverse();
+    cout<<endl;
     l.removeFromHead();
-    l.remove(60);
+    l.remove(10);
     l.traverse();
-    cout<<l.search(20);
+    cout<<endl;
+    cout<<"Searching element:"<< l.search(20);
     return 0;
 }
