@@ -12,10 +12,10 @@ class linkedstack
     public:
     linkedstack() {top=NULL;}
     bool isEmpty();
-    void push(const int data);
-    int pop();
+    void push(int data);
     int returntop();
-    void display();
+    int pop();
+    void print();
 };
 
 #endif

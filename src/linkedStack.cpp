@@ -4,13 +4,13 @@ using namespace std;
 
 bool linkedstack::isEmpty() 
 {
-    if(list.isEmpty())
-    return 1;
+    if (list.isEmpty())
+        return 1;
     else
-    return 0;
+        return 0;
 }
 
-void linkedstack::push(const int data)
+void linkedstack::push(int data)
 {
     list.addToHead(data);
     cout<<data<<" added to stack successfully."<<endl;
@@ -48,7 +48,7 @@ int linkedstack::returntop()
     }
 }
 
-void linkedstack::display()
+void linkedstack::print()
 {
     if(top==NULL)
     cout<<"Stack is empty."<<endl;

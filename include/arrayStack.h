@@ -8,22 +8,18 @@ class arrayStack
     int *arr;
     
     public:
-    arrayStack()
+    arrayStack() {int maxSize;}
+    arrayStack(int size)
     {
-        int maxSize;
+        maxSize=size;
+        top=-1;
+        arr=new int[size];
     }
-    arrayStack(int size){
-                maxSize=size;
-                top=-1;
-                arr=new int[size];}
-    ~arrayStack()
-    {
-        delete[] arr;
-    }
-    bool isEmpty() const;
-    bool isFull() const;
-    void push(const int data);
+    ~arrayStack() {delete[] arr;}
+    bool isEmpty() ;
+    bool isFull() ;
+    void push( int data);
     int pop();
-    int rtop() const;
+    int returntop() ;
     void display();
 };

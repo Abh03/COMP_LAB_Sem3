@@ -4,19 +4,19 @@ using namespace std;
 int main(int argc,char* argv[])
 {
     linkedstack st;
-    st.display();
+    st.print();
     cout<<st.isEmpty()<<endl;
     st.push(10);
-    st.display();
+    st.print();
     st.push(20);
-    st.display();
+    st.print();
     st.push(30);
-    st.display();
+    st.print();
     int num=st.pop();
-    st.display();
+    st.print();
     cout<<num<<endl;
-    int num2=st.rtop();
-    st.display();
+    int num2=st.returntop();
+    st.print();
     cout<<num2<<endl;
     cout<<st.isEmpty()<<endl;
 }

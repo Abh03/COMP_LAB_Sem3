@@ -1,20 +1,20 @@
 #include"arrayStack.h"
 using namespace std;
 
-bool arrayStack::isEmpty() const
+bool arrayStack::isEmpty() 
 {
     return top==-1;
 }
 
-bool arrayStack::isFull() const
+bool arrayStack::isFull() 
 {
     return top==maxSize-1;
 }
 
-void arrayStack::push(const int data) 
+void arrayStack::push( int data) 
 {
-    if(isFull())
-    cout<<"Stack Full. Cannot push."<<endl;
+    if (isFull())
+        cout<<"Stack Full. Cannot push."<<endl;
     else
     {
         arr[++top]=data;
@@ -37,7 +37,7 @@ int arrayStack::pop()
     }
 }
 
-int arrayStack::rtop() const
+int arrayStack::returntop() 
 {
     if(isEmpty())
     {
